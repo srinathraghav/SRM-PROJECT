@@ -38,4 +38,4 @@ jobs:
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/fraud-mlops:latest
             docker stop fraud_mlops_pipeline || true
             docker rm fraud_mlops_pipeline || true
-            docker run -d --name fraud_mlops_pipeline --restart unless-stopped -p 8501:8501 -p 8000:8000 ${{ secrets.DOCKER_USERNAME }}/fraud-mlops:latest
+            docker run -d --name fraud_mlops_pipeline --restart unless-stopped -p 8501:8501 -p 8000:8000 srinath3395/fraud-mlops:latest
