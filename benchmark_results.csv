@@ -1,0 +1,5 @@
+Strategy,Retrains,Missed Fraud (FN),False Positives (FP),Compute Cost (INR),Financial Loss (INR),Total Dual Cost (INR)
+1. Static Baseline (No Retrain),0,1,6,"Rs. 1,000.00","Rs. 28,000.00","Rs. 29,000.00"
+2. Naive Periodic (Every 5 Batches),4,1,5,"Rs. 6,600.00","Rs. 27,500.00","Rs. 34,100.00"
+3. Standard Drift-Triggered (All-Tier-2),9,0,2,"Rs. 13,600.00","Rs. 1,000.00","Rs. 14,600.00"
+4. Proposed Dual Cost-Aware Adaptive,9,0,1030,"Rs. 6,820.00","Rs. 515,000.00","Rs. 521,820.00"
